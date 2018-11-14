@@ -1,0 +1,5 @@
+<p><%= comment.content %><p>
+
+<%= link_to "Edit", edit_message_comment_path(comment.message, comment) %>
+
+<%= link_to "Delete", edit_message_comment_path(comment.message, comment), method: :delete, data: {confirm: "Are you sure?"} %>
